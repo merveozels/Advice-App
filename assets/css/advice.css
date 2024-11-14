@@ -1,0 +1,149 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: #202733;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.card-inner {
+  background-color: #313A48;
+  border-radius: 10px;
+  margin-top: 126px;
+  margin-inline: 18px;
+  box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.1);
+  padding-inline: 24px;
+  padding-top: 70px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  color: rgba(83, 255, 170, 1);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 15.03px;
+  letter-spacing: 3.4571425914764404px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+
+}
+
+p {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32.78px;
+  letter-spacing: -0.2571428716182709px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  color: rgba(206, 227, 233, 1);
+  margin-top: 24px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32.78px;
+  letter-spacing: -0.2571428716182709px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  color: rgba(206, 227, 233, 1);
+  margin-top: 24px;
+}
+
+.slider{
+  margin-inline: auto;
+  margin-top: 24px;
+}
+
+button{
+  border-radius: 10000px;
+  padding: 30px;
+  background: url(../img/zar.svg) no-repeat center rgba(83, 255, 170, 1);
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  border: 1px solid transparent;
+}
+
+.button-inner{
+  position: relative;
+}
+
+button:hover{
+  box-shadow: 0px 0px 40px 0px rgba(83, 255, 170, 1);
+}
+
+@media(width>1000px){
+  .card-inner{
+    max-width: 650px;
+    margin-inline: auto;
+  }
+}
